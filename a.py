@@ -327,7 +327,7 @@ docs.extend(technology)
 docs.extend(sii)
 docs.extend(sports)
 
-#count occurerence
+#count occurance
 
 count0=0; #آ
 count1=0; #ا
@@ -490,19 +490,6 @@ for p in probs:
 	Entropy += (- float(p*float(math.log(p,2))) )
 print "A(with space): Entropy= ", Entropy
 
-#without space
-num = 36.0
-p0 = p1 = p2 = p3 = p4 = p5 = p6 = p7 = p8 = p9 = p10 = p11 = p12 = p13 = p14 = p15 = p16 = p17 = p18 = p19 = p20 = p21 = p22 = p23 = p24 = p25 = p26 = p27 = p28 = p29 = p30 = p31 = p32 = p33 = p34 = p35 = float(1/num);
-
-probs= [p0, p1 ,p2, p3, p4 ,p5 ,p6, p7 ,p8 ,p9 ,p10 ,p11 ,p12 ,p13 ,p14 ,p15 ,p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35]
-
-Entropy = 0.0;
-for p in probs:
-	Entropy += (- float(p*float(math.log(p,2))) )
-print "A(without space): Entropy= ", Entropy
-print
-
-
 
 
 ###b
@@ -646,58 +633,8 @@ for p in probs:
 		Entropy += (- float(p*float(math.log(p,2))) )
 print "G(with space): Entropy= ", Entropy
 
-#without space
-num_chars =0.0;
-num_chars += (count0 + count1+ count2+ count3+ count4+ count5+ count6+ count7+ count8+ count9+ count10+ count11+ count12+ count13 + count14+ count15+ count16+ count17+ count18+ count19+ count20 + count21+ count22+ count23+ count24+ count25+ count26+ count27+ count28+ count29+ count30+ count31+ count32+ count33+ count34+ count35);
 
-p0 = float(count0/num_chars);
-p1 = float(count1/num_chars);
-p2 = float(count2/num_chars);
-p3 = float(count3/num_chars);
-p4 = float(count4/num_chars);
-p5 = float(count5/num_chars);
-p6 = float(count6/num_chars);
-p7 = float(count7/num_chars);
-p8 = float(count8/num_chars);
-p9 = float(count9/num_chars);
-p10 = float(count10/num_chars);
-p11 = float(count11/num_chars);
-p12 = float(count12/num_chars);
-p13 = float(count13/num_chars);
-p14 = float(count14/num_chars);
-p15 = float(count15/num_chars);
-p16 = float(count16/num_chars);
-p17 = float(count17/num_chars);
-p18 = float(count18/num_chars);
-p19 = float(count19/num_chars);
-p20 = float(count20/num_chars);
-p21 = float(count21/num_chars);
-p22 = float(count22/num_chars);
-p23 = float(count23/num_chars);
-p24 = float(count24/num_chars);
-p25 = float(count25/num_chars);
-p26 = float(count26/num_chars);
-p27 = float(count27/num_chars);
-p28 = float(count28/num_chars);
-p29 = float(count29/num_chars);
-p30 = float(count30/num_chars);
-p31 = float(count31/num_chars);
-p32 = float(count32/num_chars);
-p33 = float(count33/num_chars);
-p34 = float(count34/num_chars);
-p35 = float(count35/num_chars);
-
-probs= [p0, p1 ,p2, p3, p4 ,p5 ,p6, p7 ,p8 ,p9 ,p10 ,p11 ,p12 ,p13 ,p14 ,p15 ,p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35]
-
-Entropy = 0.0;
-for p in probs:
-	if p!=0.0:
-		Entropy += (- float(p*float(math.log(p,2))) )
-print "G(without space): Entropy= ", Entropy, "\n"
-
-
-
-###D
+###d
 c = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 for item in docs:
@@ -720,7 +657,7 @@ print "D: word Expectation= " , E
 
 
 
-###H
+###h
 Dictionary={u"آ":p0,u"ا": p1,u"ب": p2,u"پ": p3,u"ت": p4,u"ث": p5,u"ج": p6,u"چ": p7,u"ح": p8,u"خ": p9,u"د": p10,u"ذ": p11,u"ر": p12,u"ز": p13,u"ژ": p14,u"س": p15,u"ش": p16,u"ص": p17,u"ض": p18,u"ط": p19,u"ظ": p20,u"ع": p21,u"غ": p22,u"ف": p23,u"ق": p24,u"ک": p25,u"گ": p26,u"ل": p27,u"م": p28,u"ن": p29,u"و": p30,u"ه": p31,u"ي": p32,u"ء": p33,u"ة": p34,u"ئ": p35}
 
 Dictionary_Length = len(Dictionary)
@@ -752,7 +689,7 @@ plt.show()
 
 
 
-###V
+###v
 import numpy as np
 import scipy.stats as stats
 import pylab as pl
