@@ -1,10 +1,12 @@
 # farsi-characters-distribution-and-Entropy
 
 Dataset(Zabra):
-data (ISNA news) includes 7 topics and each topic with 10 documents
+data (ISNA news) includes 7 topics and each topic with 10 documents.
+
 at the first part of the code, we make a list for each topic and enter the docs in related list
 
 This code includes 6 phases:
+
 ###a 
 By considering equal probabilty for each farsi letters, Entropy for each char is calculated
 ###b
